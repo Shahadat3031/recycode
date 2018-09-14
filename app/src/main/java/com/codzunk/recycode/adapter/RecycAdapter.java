@@ -1,6 +1,7 @@
 package com.codzunk.recycode.adapter;
 
 import android.support.annotation.NonNull;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,10 +33,10 @@ public class RecycAdapter extends RecyclerView.Adapter<RecycAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
-        holder.imageView.setImageResource(imgUrls.get(position).getImgResId());
+        holder.imageView.setImageResource(imgUrls.get(position).getThumbNail());
         String itemCount = "" + (position + 1);
-        holder.countView.setText(itemCount);
-        holder.imageView.setOnClickListener(new View.OnClickListener() {
+        holder.countView.setText(imgUrls.get(position).getImgTitle());
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onClickListener.onClick(v, holder.getAdapterPosition());
@@ -51,11 +52,13 @@ public class RecycAdapter extends RecyclerView.Adapter<RecycAdapter.ViewHolder> 
     class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private ImageView imageView;
         private TextView countView;
+        private CardView cardView;
 
         ViewHolder(View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.imageView);
             countView = itemView.findViewById(R.id.countView);
+            cardView  = itemView.findViewById(R.id.cardView);
         }
 
         @Override

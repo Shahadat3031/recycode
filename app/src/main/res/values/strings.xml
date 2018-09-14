@@ -5,4 +5,27 @@
 
     <string name="Banner_test">ca-app-pub-3940256099942544/6300978111</string>
     <string name="Interstitial_test">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string-array name="chora_headline">
+        <item>আমাদের প্রিয় ফল</item>
+        <item>আমি খোকা</item>
+        <item>আতা গাছে তোতা পাখি</item>
+        <item>আয়রে আয় টিয়ে</item>
+        <item>বাক্‌ বাকুম্‌</item>
+        <item>বড় হবে</item>
+        <item>ডাক পাড়ি</item>
+        <item>হাট্টিমা টিম টিম</item>
+        <item>খেতে হবে</item>
+        <item>পাঠশালায় যায়</item>
+        <item>খোকার রাগ</item>
+        <item>খোকার রাগ</item>
+        <item>খোকন খোকন</item>
+        <item>খোকা খুকু</item>
+        <item>মাছ ধরতে</item>
+        <item>মামার বাড়ি</item>
+        <item>প্রার্থনা</item>
+        <item>রঙ-তুলিতে আঁকে খুকু</item>
+        <item>সোনামণির বে</item>
+        <item>ভালো ছেলে</item>
+    </string-array>
 </resources>
